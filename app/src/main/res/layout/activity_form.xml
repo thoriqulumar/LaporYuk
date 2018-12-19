@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thor.laporyuk.FormActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORM LAPOR"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama"
+            android:id="@+id/etName"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nomor Telepon"
+            android:id="@+id/etNomor"
+            android:inputType="phone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Topik : "
+            android:textSize="18dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan"
+                android:id="@+id/RbPendidikan"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fasilitas dan Infrastruktur"
+                android:id="@+id/RbFasilitas"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kriminalitas"
+                android:id="@+id/RbKriminal"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kesehatan dan Pelayanan"
+                android:id="@+id/RbKesehatan"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pelayanan Masyarakat"
+                android:id="@+id/RbPelayanan"
+                android:textSize="17dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lain Lain"
+                android:id="@+id/RbLain"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lapor : "
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:id="@+id/etLapor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="KIRIM"
+                android:onClick="kirim"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="KEMBALI"
+                android:id="@+id/btnKirim"
+                android:onClick="kembali"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
